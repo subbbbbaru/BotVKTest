@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  golang-services:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: docker-image-myvkbot:0.0.2
+    container_name: docker-container-myvkbot
+    restart: always
